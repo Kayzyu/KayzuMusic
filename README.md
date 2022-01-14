@@ -1,7 +1,8 @@
-<h2 align="centre">Kayzu Music Player</h2>
+<h2 align= center><b> 🎵 Kayzu Music Bot 🎵 </b></h2>
+
 
 <p align="center">
-  <img src="">
+<img src="https://telegra.ph/file/a22ffd7bc10bad75431fa.jpg">
 </p>
 
 <h3>Requirements 📝</h3>
