@@ -43,7 +43,7 @@ def start_pannel():
             InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚" url=f"https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4")
+            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚", url="https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4"),
         ],
     ]
     return (
@@ -59,11 +59,11 @@ pstart_markup = InlineKeyboardMarkup(
                 "➕ ᴀᴅᴅ ᴍᴇ ʏᴏᴜʀ ᴛᴏ ɢʀᴏᴜᴘ​ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
         ],
         [
-            InlineKeyboardButton(text="⚡ sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton("⚡ ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{GROUP}"),
+            InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url=f"https://t.me/{CHANNEL}"),
         ],
         [
-            InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚" url=f"https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4")
+            InlineKeyboardButton("📚 ᴄᴏᴍᴍᴀɴᴅ ​📚", url="https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4"),
         ],
     ]
 )
@@ -77,11 +77,11 @@ async def welcome(_, message: Message):
         try:
             if member.id in OWNER:
                 return await message.reply_text(
-                    f"👨‍💻 Pemilik Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Pemilik Bot [{member.mention}] baru saja bergabung di grup ini."
                 )
             if member.id in SUDOERS:
                 return await message.reply_text(
-                    f"👩‍💻 Admin Bot [{member.mention}] baru saja bergabung di grup ini."
+                    f"💡 Admin Bot [{member.mention}] baru saja bergabung di grup ini."
                 )
             if member.id == ASSID:
                 await remove_active_chat(chat_id)
@@ -132,11 +132,11 @@ async def play(_, message: Message):
         await app.send_message(
             message.chat.id,
             text=f"""
-**⚡ Selamat Datang {rpk}!
+**✨ Selamat Datang {rpk}!
 
 💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
 
-💡 Kalo Mau Pake Izin Dulu Ok.
+💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
 
 """,
             parse_mode="markdown",
