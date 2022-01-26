@@ -331,7 +331,7 @@ Saya perlu menjadi admin dengan beberapa izin:
         )
         title = "Audio Yang Dipilih Dari Telegram"
         link = "https://t.me/KayzuSupport"
-        thumb = "cache/IMG_20220112_073838_779.jpg"
+        thumb = "cache/IMG_20220126_194406_475.jpg"
         videoid = "smex1"
     elif url:
         what = "URL Searched"
@@ -481,7 +481,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             return await mystic.edit_text(
                 f"Lagu Tidak Ditemukan.\n**Kemungkinan Alasan:** {e}"
             )
-        thumb ="cache/IMG_20211105_143948_192.jpg"
+        thumb ="cache/IMG_20220126_194406_475.jpg"
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await mystic.edit( 
             f"**🎵 Silahkan pilih lagu yang ingin anda putar**\n\n¹ <b>{title1[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5[:27]}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
@@ -517,7 +517,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
         )
         await message.reply_photo(
-            photo="cache/IMG_20220112_073838_779.jpg",
+            photo="cache/IMG_20220126_194406_475.jpg",
             caption=f"""
 <b>💡 Trek ditambahkan ke antrian</b>
 
@@ -557,7 +557,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             f28.close()
             buttons = audio_markup(videoid, user_id)
         await message.reply_photo(
-            photo="cache/IMG_20220112_073838_779.jpg",
+            photo="cache/IMG_20220126_194406_475.jpg",
             reply_markup=InlineKeyboardMarkup(buttons),
             caption=f"""
 <b>🏷 Nama:</b> [{title[:25]}]({link})
@@ -708,7 +708,7 @@ async def startyuplay(_, CallbackQuery):
         f28.close()
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
-            photo="cache/IMG_20220112_073838_779.jpg",
+            photo="cache/IMG_20220126_194406_475.jpg",
             caption=f"""
 <b>💡 Trek ditambahkan ke antrian</b>
 
@@ -738,7 +738,7 @@ async def startyuplay(_, CallbackQuery):
         buttons = play_markup(videoid, user_id)
         await mystic.delete()
         m = await CallbackQuery.message.reply_photo(
-            photo="cache/IMG_20220112_073838_779.jpg",
+            photo="cache/IMG_20220126_194406_475.jpg",
             reply_markup=InlineKeyboardMarkup(buttons),
             caption=f"""
 <b>🏷 Nama:</b> [{title[:25]}]({url})
@@ -821,7 +821,7 @@ async def popat(_,CallbackQuery):
 
 @app.on_message(filters.command("playplaylist"))
 async def play_playlist_cmd(_, message):
-    thumb ="cache/IMG_20220112_073838_779.jpg"
+    thumb ="cache/IMG_20220126_194406_475.jpg"
     user_id = message.from_user.id
     user_name = message.from_user.first_name
     buttons = playlist_markup(user_name, user_id)
