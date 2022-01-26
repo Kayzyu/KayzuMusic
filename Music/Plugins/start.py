@@ -44,6 +44,7 @@ def start_pannel():
         ],
         [
             InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚" url=f"https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4)
+        ],
     ]
     return (
         "🎛 **{BOT_NAME} Merupakan salah satu dari bot telegram yang bisa memutar musik di grup**",
@@ -63,6 +64,7 @@ pstart_markup = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(text="📚 ᴄᴏᴍᴍᴀɴᴅ​ 📚" url=f"https://telegra.ph/ҡᴀʏ-ᴇx-01-26-4)
+        ],
     ]
 )
 welcome_captcha_group = 2
