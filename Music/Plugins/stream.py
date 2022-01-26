@@ -195,7 +195,7 @@ async def vplay(c: Client, message: Message):
                 await loser.delete()
                 requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
                 await message.reply_photo(
-                    photo="cache/IMG_20220112_073838_779.jpg",
+                    photo="cache/IMG_20220126_194406_475.jpg",
                     caption=f"""
 💡 **Trek ditambahkan ke antrian**
 
@@ -226,7 +226,7 @@ async def vplay(c: Client, message: Message):
                 await loser.delete()
                 requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
                 await message.reply_photo(
-                    photo="cache/IMG_20220112_073838_779.jpg",
+                    photo="cache/IMG_20220126_194406_475.jpg",
                     caption=f"""
 🎥 **Streaming video dimulai**
 
@@ -267,7 +267,7 @@ async def vplay(c: Client, message: Message):
                         await loser.delete()
                         requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
                         await message.reply_photo(
-                            photo="cache/IMG_20220112_073838_779.jpg",
+                            photo="cache/IMG_20220126_194406_475.jpg",
                             caption=f"""
 💡 **Trek ditambahkan ke antrian**
 
@@ -294,7 +294,7 @@ async def vplay(c: Client, message: Message):
                             add_to_queue(chat_id, songname, ytlink, url, "Video", Q)
                             await loser.delete()
                             requester = f"[{message.from_user.first_name}](tg://user?id={message.from_user.id})"
-                            thumb ="cache/IMG_20220112_073838_779.jpg"
+                            thumb ="cache/IMG_20220126_194406_475.jpg"
                             await message.reply_photo(
                                 photo="cache/IMG_20220112_073838_779.jpg",
                                 caption=f"""
