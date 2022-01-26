@@ -175,7 +175,7 @@ start_keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "📚 ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​ 📚", url="https://telegra.ph/ҡʏʏ-ᴇx-12-15"
+                "📚 ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​ 📚", url="https://telegra.ph/KayMusic-01-26"
             )
         ],
         [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close2")],
