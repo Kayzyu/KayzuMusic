@@ -25,8 +25,11 @@ pyromod
 requests
 speedtest-cli
 uvloop
-yt-dlp==2021.11.10.1
+git+https://github.com/Sorrybabe/downloader
 telegraph
 hachoir
 lyricsgenius
 httpx>=0.14.2
+gitpython
+rich
+heroku3
